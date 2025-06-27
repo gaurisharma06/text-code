@@ -1,0 +1,115 @@
+#define turbidity_result_add_first 0x90   //Orginal0x50
+#define frc_result_add_first 0x50
+#define tds_result_add_first 0x50
+#define iron_result_add_first 0x50
+#define ph_result_add_first 0x50
+#define lead_result_add_first 0x50
+#define nitrate_result_add_first 0x50
+#define flouride_result_add_first 0x60
+#define copper_result_add_first 0x50
+#define ec_result_add_first 0x60
+
+#define turbidity_result_add_second 0x20  //Orginal0x00
+#define frc_result_add_second 0x10
+#define tds_result_add_second 0x20
+#define iron_result_add_second 0x30
+#define ph_result_add_second 0x40
+#define lead_result_add_second 0x60
+#define nitrate_result_add_second 0x80
+#define flouride_result_add_second 0x10
+#define copper_result_add_second 0x90
+#define ec_result_add_second 0x00
+
+#define th_result_add 0x5050
+#define ta_result_add 0x5070
+
+#define turbidity_test_add_first 0x10
+#define frc_test_add_first 0x10
+#define tds_test_add_first 0x10
+#define iron_test_add_first 0x10
+#define ph_test_add_first 0x10
+#define th_test_add_first 0x10
+#define lead_test_add_first 0x10
+#define ta_test_add_first 0x20
+#define nitrate_test_add_first 0x20
+#define flouride_test_add_first 0x30
+#define copper_test_add_first 0x20
+#define ec_test_add_first 0x20
+
+#define turbidity_test_add_second 0x30
+#define frc_test_add_second 0x40
+#define tds_test_add_second 0x50
+#define iron_test_add_second 0x60
+#define ph_test_add_second 0x70
+#define th_test_add_second 0x80
+#define lead_test_add_second 0x90
+#define ta_test_add_second 0x00
+#define nitrate_test_add_second 0x10
+#define flouride_test_add_second 0x10
+#define copper_test_add_second 0x20
+#define ec_test_add_second 0x30
+
+
+#define home_page_username_add 0x7010
+
+#define turbidity_page 0x26  //Original0x24
+#define frc_page 0x2C
+#define tds_page 0x33
+#define iron_page 0x3C
+#define ph_page 0x2E         //Original0x44
+#define th_page 0x4E
+#define lead_page 0x37       //Original0x57
+#define ta_page 0x61
+#define nitrate_page 0x6A
+#define copper_page 0x73
+#define ec_page 0x7A
+#define flouride_page 0x97
+
+#define test_page 0x16  //Original0x17
+#define home_page 0x00
+#define battery_low_page 0xA7
+#define ble_page 0xA8
+
+unsigned char test_page_change[10] = { 0x5a, 0xa5, 0x07, 0x82, 0x00, 0x84, 0x5a, 0x01, 0x00, test_page };
+unsigned char home_page_change[10] = { 0x5a, 0xa5, 0x07, 0x82, 0x00, 0x84, 0x5a, 0x01, 0x00, home_page };
+unsigned char battery_low_page_change[10] = { 0x5a, 0xa5, 0x07, 0x82, 0x00, 0x84, 0x5a, 0x01, 0x00, battery_low_page };
+unsigned char ble_page_change[10] = { 0x5a, 0xa5, 0x07, 0x82, 0x00, 0x84, 0x5a, 0x01, 0x00, ble_page };
+
+unsigned char turbidity_page_change[10] = { 0x5a, 0xa5, 0x07, 0x82, 0x00, 0x84, 0x5a, 0x01, 0x00, turbidity_page };
+unsigned char frc_page_change[10] = { 0x5a, 0xa5, 0x07, 0x82, 0x00, 0x84, 0x5a, 0x01, 0x00, frc_page };
+unsigned char tds_page_change[10] = { 0x5a, 0xa5, 0x07, 0x82, 0x00, 0x84, 0x5a, 0x01, 0x00, tds_page };
+unsigned char iron_page_change[10] = { 0x5a, 0xa5, 0x07, 0x82, 0x00, 0x84, 0x5a, 0x01, 0x00, iron_page };
+unsigned char ph_page_change[10] = { 0x5a, 0xa5, 0x07, 0x82, 0x00, 0x84, 0x5a, 0x01, 0x00, ph_page };
+unsigned char th_page_change[10] = { 0x5a, 0xa5, 0x07, 0x82, 0x00, 0x84, 0x5a, 0x01, 0x00, th_page };
+unsigned char lead_page_change[10] = { 0x5a, 0xa5, 0x07, 0x82, 0x00, 0x84, 0x5a, 0x01, 0x00, lead_page };
+unsigned char ta_page_change[10] = { 0x5a, 0xa5, 0x07, 0x82, 0x00, 0x84, 0x5a, 0x01, 0x00, ta_page };
+unsigned char nitrate_page_change[10] = { 0x5a, 0xa5, 0x07, 0x82, 0x00, 0x84, 0x5a, 0x01, 0x00, nitrate_page };
+unsigned char copper_page_change[10] = { 0x5a, 0xa5, 0x07, 0x82, 0x00, 0x84, 0x5a, 0x01, 0x00, copper_page };
+unsigned char ec_page_change[10] = { 0x5a, 0xa5, 0x07, 0x82, 0x00, 0x84, 0x5a, 0x01, 0x00, ec_page };
+unsigned char flouride_page_change[10] = { 0x5a, 0xa5, 0x07, 0x82, 0x00, 0x84, 0x5a, 0x01, 0x00, flouride_page };
+
+unsigned char turbidity_result_reading[8] = { 0x5a, 0xa5, 0x05, 0x82, turbidity_result_add_first, turbidity_result_add_second, 0x00, 0x00 };
+unsigned char frc_result_reading[8] = { 0x5a, 0xa5, 0x05, 0x82, frc_result_add_first, frc_result_add_second, 0x00, 0x00 };
+unsigned char tds_result_reading[8] = { 0x5a, 0xa5, 0x05, 0x82, tds_result_add_first, tds_result_add_second, 0x00, 0x00 };
+unsigned char iron_result_reading[8] = { 0x5a, 0xa5, 0x05, 0x82, iron_result_add_first, iron_result_add_second, 0x00, 0x00 };
+unsigned char ph_result_reading[8] = { 0x5a, 0xa5, 0x05, 0x82, ph_result_add_first, ph_result_add_second, 0x00, 0x00 };
+unsigned char lead_result_reading[8] = { 0x5a, 0xa5, 0x05, 0x82, lead_result_add_first, lead_result_add_second, 0x00, 0x00 };
+unsigned char nitrate_result_reading[8] = { 0x5a, 0xa5, 0x05, 0x82, nitrate_result_add_first, nitrate_result_add_second, 0x00, 0x00 };
+unsigned char flouride_result_reading[8] = { 0x5a, 0xa5, 0x05, 0x82, flouride_result_add_first, flouride_result_add_second, 0x00, 0x00 };
+unsigned char copper_result_reading[8] = { 0x5a, 0xa5, 0x05, 0x82, copper_result_add_first, copper_result_add_second, 0x00, 0x00 };
+unsigned char ec_result_reading[8] = { 0x5a, 0xa5, 0x05, 0x82, ec_result_add_first, ec_result_add_second, 0x00, 0x00 };
+
+#define TA_C_add 0x31
+#define TA_D_add 0x32
+#define TA_incremental_decremental_add_first 0x30
+#define TA_incremental_decremental_add_second 0x30
+
+#define TH_B_add 0x33
+#define TH_C_add 0x34
+#define TH_incremental_decremental_add_first 0x30
+#define TH_incremental_decremental_add_second 0x20
+
+
+#define WIFI_SSID "Cluix"
+#define WIFI_PASS "cluix2024"
+#define VERSION "0.0.1"
